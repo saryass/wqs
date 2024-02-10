@@ -1,0 +1,1805 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    box-sizing: border-box;
+    background: #eaebecda;
+    padding-top: 98px;
+    /* to make a 20px vertical space btw (navbar-container) and (main-container) */
+}
+
+/* ******************************************************************/
+/* navbar-container   in   BODY */
+/* *****************************************************************/
+.navbar-container {
+    /* border: 2px solid blue; */
+    background-color: #001f44;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    /* to align his elements (navbar1) and (navbar2)*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+/* ******************************************************************/
+/* navbar1   in   navbar-container   in   BODY */
+/* *****************************************************************/
+.navbar1 {
+    /* border: 1px solid red; */
+    width: 1284px;
+    align-self: center;
+    /* to set itself horizontally at the center of (navbar-container) */
+    display: flex;
+    justify-content: flex-end;
+    /* to align his element (navbar1-language) */
+    /* border-bottom: 1px solid white; */
+}
+
+/* ******************************************************************/
+/* line-inbetween  in   navbar-container   in   BODY */
+/* *****************************************************************/
+.line-between {
+    border-top: 1px solid #777777a2;
+    opacity: 0.5;
+}
+
+.navbar1-language {
+    /* background-color: greenyellow; */
+    margin-bottom: 5px;
+    /* to make a vertical space btw itself and (line-between) */
+}
+
+.navbar1-language ul {
+    display: flex;
+}
+
+.navbar1-language li {
+    /* background-color: palevioletred; */
+    padding-right: 20px;
+    /* to make a horizontal space between the text */
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar1-language ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbar1 ul li a:hover {
+    color: red;
+}
+
+/* ******************************************************************/
+/* navbar2   in   navbar-container   in   BODY */
+/* *****************************************************************/
+.navbar2 {
+    /* border: 1px solid red; */
+    width: 1284px;
+    align-self: center;
+    /* to set itself horizontally at the center of (navbar-container) */
+    display: flex;
+    justify-content: space-between;
+    /* to align his elements (navbar2-part-A) and (navbar2-part-B)*/
+}
+
+.navbar2-part-A {
+    /* background-color: greenyellow; */
+    width: 68%;
+    height: 46px;
+}
+
+.navbar2-part-A ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-channel8-logo {
+    padding-left: 20px;
+    /* to make the horizontal space btw the logo and (سیاسەت) a bit larger */
+}
+
+.navbar2-part-A ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: 100ms;
+    padding-bottom: 8px;
+    /* to make a vertical space between the text and (border-bottom during hover over) */
+}
+
+.red:hover {
+    border-bottom: 2px solid red;
+}
+
+.light-green:hover {
+    border-bottom: 2px solid lightgreen;
+}
+
+.yellow:hover {
+    border-bottom: 2px solid yellow;
+}
+
+.grey:hover {
+    border-bottom: 2px solid rgb(199, 196, 196);
+}
+
+.green:hover {
+    border-bottom: 2px solid green;
+}
+
+.white:hover {
+    border-bottom: 2px solid white;
+}
+
+.navbar2-part-B {
+    /* border: 1px solid black; */
+    width: 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-icon {
+    color: white
+}
+
+.fa-magnifying-glass {
+    padding-left: 15px;
+}
+
+/* ******************************************************************/
+/* main-container   in   BODY */
+/* *****************************************************************/
+.main-container {
+    /* border: 2px solid blue; */
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    /* to align and set his elements (row1-----row13)in a column */
+}
+
+/* ******************************************************************/
+/* Row   in   main-container   in   BODY */
+/* *****************************************************************/
+.row {
+    /* apply on all (row) clases */
+    /* border: 2px solid red; */
+    width: 1284px;
+    align-self: center;
+    /* to align itself horizontally at the center of (main-container) */
+}
+
+/* ******************************************************************/
+/* row1   in   main-container*/
+/* *****************************************************************/
+.row1 {
+    display: flex;
+    gap: 10px;
+    /* to make a horizontal space btw his 2 elements (main-news1) & (sub-news1) */
+}
+
+/* *************************************************************/
+/* main-news1    in    row1 */
+/* *************************************************************/
+.main-news1 {
+    width: 50%;
+    border-left: 1px solid #b4b4b4;
+    padding-left: 10px;
+    /* to move (border-left) 10px leftward  */
+}
+
+/* *************************************************************/
+/* main-news1-img-box   in   main-news1    in    row1 */
+/* *************************************************************/
+.main-news1-img-box {
+    /* border: 1px solid blue; */
+    height: 430px;
+}
+
+.main-news1-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.hover-img {
+    /* apply on all (hover-img) classes */
+    transition: 0.4s;
+}
+
+.hover-img:hover {
+    /* apply on all (hover-img) classes */
+    opacity: 0.85;
+}
+
+.img-space-category {
+    /* apply on all (img-space-category) classes */
+    margin-bottom: 15px;
+}
+
+a {
+    /* apply on all <anchor> tags ;) */
+    text-decoration: none;
+}
+
+.hover-underline:hover {
+    /* apply on all (hover-underline) classes*/
+    text-decoration: underline;
+}
+
+/* *************************************************************/
+/* main-news1-txt   in   main-news1    in    row1 */
+/* *************************************************************/
+.category {
+    color: #001f44;
+    font-size: 1em;
+    padding-right: 5px;
+    /* to make a horizontal space with his (border-right) */
+}
+
+#political-category {
+    border-right: 2px solid red;
+}
+
+#sport-category {
+    border-right: 2px solid yellow;
+}
+
+#economy-category {
+    border-right: 2px solid lightgreen;
+}
+
+#culture-category {
+    border-right: 2px solid red;
+}
+
+.main-news1-header {
+    /* border: 1px solid black; */
+    color: #001f44;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.date {
+    /* apply on all (date) classes*/
+    color: #001f44;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+}
+
+.paragraph {
+    color: #444469;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 5px;
+    /* to make a vertical space with (date) */
+}
+
+/* *******************************************************/
+/* sub-news1    in    row1 */
+/* *****************************************************/
+.sub-news1 {
+    /* background-color: pink; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* to make a vertical space btw his 2 elements (sub-news1-block) */
+}
+
+/* ************************************/
+/*sub-news1-block  in   sub-news1  */
+/* *************************************/
+.sub-news1-block {
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: 30px;
+    /* to align and set his 2 elements (sub-news1-box) next to each other */
+}
+
+.sub-news1-box {
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+/* *************************************************************/
+/*sub-news1-img-box  sub-news1-box in   sub-news1-block   */
+/* ************************************************************/
+.sub-news1-img-box {
+    /* background-color: yellow; */
+    height: 200px;
+}
+
+.sub-news1-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* *******************************************/
+/*sub-news1-txt   in    sub-news1-box*/
+/* ********************************************/
+.sub-news-header {
+    /* apply on all (sub-news-header) classes*/
+    color: #001f44;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 10px 0;
+    /* to make a vertical space with (category) & (date)*/
+}
+
+/* *************************************************************/
+/* Row2   in   main-container   */
+/* ************************************************************/
+.row2 {
+    display: flex;
+    gap: 20px;
+    /* to align and set his 4 elements (row2-box) next to each other */
+    border-top: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    margin-top: 20px;
+    /* to make a vertical space with (Row1)  */
+}
+
+/* **************************************************/
+/* Row2-box   in   Row2   */
+/* ***********************************************/
+.row2-box {
+    /* border: 1px solid black; */
+    width: 25%;
+    display: flex;
+    /* to set and align his 2 elements (row2-img-box) and (row2-txt) next to each other */
+    gap: 30px;
+}
+
+/* **************************************************/
+/* Row2-img-box   in   Row2-box   */
+/* ***********************************************/
+.row2-img-box {
+    /* border: 1px solid blue; */
+    width: 45%;
+    height: 126px;
+}
+
+.row2-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ******************************************/
+/* Row2-txt   in   Row2-box   */
+/* ****************************************/
+.row2-txt {
+    /* background-color: yellow; */
+    width: 50%;
+}
+
+.row2-news-header {
+    font-size: 1em;
+}
+
+/* ******************************************/
+/* Row3   in   main-container   */
+/* ****************************************/
+.row3 {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    /* to set and align his 2 elements (section) and (row3-block) next to each other  */
+    margin-bottom: 30px;
+    /* to make a vertical space with (Row4) */
+}
+
+.section {
+    /* border: 1px solid rgb(26, 231, 60); */
+    color: #001f44;
+    font-size: 1.2em;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /* to make a vertical space with his top and bottom content */
+}
+
+/* ******************************************/
+/* row3-block   in   Row3  */
+/* ****************************************/
+.row3-block {
+    display: flex;
+    gap: 20px;
+}
+
+.row3-box {
+    /* border: 1px solid black; */
+    width: 33.3333%;
+}
+
+.row3-img-box {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 230px;
+}
+
+.row3-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* ********************************************************/
+/* Row4   in   main-container */
+/* ******************************************************/
+.row4 {
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: 50px;
+    /* to move (border-bottom) downward */
+}
+
+/* ********************************************************/
+/* row4-block   in   Row4   */
+/* ******************************************************/
+.row4-block {
+    display: flex;
+    gap: 10px;
+}
+
+/* ********************************************************/
+/* row4-box   in   row4-block   */
+/* ******************************************************/
+.row4-box {
+    /* border: 1px solid black; */
+    width: 33.3333%;
+}
+
+/* ********************************************************/
+/* TITLE-LINE   in   row4-box   */
+/* ******************************************************/
+.TITLE-LINE {
+    /* apply on (Row11) also ;) */
+    /* border: 1px dashed blue; */
+    /* background-color: pink; */
+    display: flex;
+    /* to set and align his 2 elements (row4-title) and (side-line) next to each other  */
+    gap: 10px;
+    /* to make a horizontal space btw his 2 elements (row4-title) and (side-line)  */
+    padding-bottom: 20px;
+    /* to make a vertical space with (row4-img-box) */
+}
+
+/* ********************************************************/
+/* row4-title   in   TITLE-LINE    */
+/* ******************************************************/
+.row4-title {
+    /* background-color: yellow; */
+    color: #001f44;
+    font-size: 1.1em;
+    white-space: nowrap;
+    /* to prevent the text from wrapping, and stay in a one single line ;).. if i do not use this property the text (رۆژهەڵاتی ناوەڕاست) would wrap */
+}
+
+/* ********************************************************/
+/* Side-line   in   TITLE-LINE    */
+/* ******************************************************/
+.side-line {
+    /* apply on (Row11) also ;) */
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+}
+
+.side-line::after {
+    /* apply on (Row11) also ;) */
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #b4b4b4;
+    position: absolute;
+    top: 65%;
+    left: 0;
+}
+
+/* ********************************************************/
+/* row4-img-box   in   row4-box  */
+/* ******************************************************/
+.row4-img-box {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 232px;
+}
+
+.row4-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* ********************************************************/
+/* headlines   in   row4-box   */
+/* ******************************************************/
+.headlines {
+    /* border: 1px dashed orchid; */
+    display: flex;
+    flex-direction: column;
+    /* even though without using flex-box they are in a column, but i used flex-box to be able to give a  vertical gap sapace btw his elements ;) */
+    gap: 30px;
+    /* to make a vertical space btw his elements*/
+    margin-top: 22px;
+    /* to make a vertical space btw itself and above element, which is  <p class="paragraph> */
+}
+
+.little-dot-red {
+    /* border: 1px solid blue; */
+    /* background-color: pink; */
+    width: 94%;
+    color: #001f44;
+    padding-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.little-dot-red::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.little-dot-grey::before {
+    background-color: gray;
+    /* this element is in row11 */
+}
+
+.little-dot-light-grey::before {
+    background-color: #9ecce0;
+    /* this element is in row11 */
+}
+
+.little-dot-red:hover {
+    text-decoration: underline;
+}
+
+/* ********************************************************/
+/* Row5   in   main-container  */
+/* ******************************************************/
+.row5 {
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: 35px;
+    /* to move (border-bottom) 35px downward */
+}
+
+/* ********************************************************/
+/* row5-block   in   Row5   */
+/* ******************************************************/
+.row5-block {
+    display: flex;
+    gap: 20px;
+    /* to set and align his 5 eleemnts (row5-box) next to each other */
+}
+
+/* ********************************************************/
+/* row5-box    in   row5-block */
+/* ******************************************************/
+.row5-box {
+    /* border: 1px solid black; */
+    width: 20%;
+}
+
+.row5-img-box {
+    /* border: 1px solid red; */
+    height: 135px;
+}
+
+.row5-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* ********************************************************/
+/* Row6   in   main-container */
+/* ******************************************************/
+.row6 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* to make a vertical space with (Row5) */
+}
+
+.economy-section {
+    color: #001f44;
+    /* background-color: yellow; */
+    font-size: 1.5em;
+    padding-bottom: 40px;
+    /* to make a vertical space with (row6-block) */
+}
+
+#economy-section-color {
+    color: #001f44;
+}
+
+/* ********************************************************/
+/* row6-block   in   Row6 */
+/* ******************************************************/
+.row6-block {
+    /* border: 2px solid red; */
+    display: flex;
+    /* to set and align his 2 elements (row6-txt-box) and (row6-img-box)next to each other */
+    gap: 25px;
+}
+
+/* ********************************************************/
+/* row6-txt-box   in   row6-block  */
+/* ******************************************************/
+.row6-txt-box {
+    /* border: 1px solid black; */
+    width: 40%;
+    align-self: center;
+    /* to set itself vertically at the center of (row6-block) ;) */
+}
+
+.row6-header {
+    color: #001f44;
+    font-size: 2.95em;
+    line-height: 1.6;
+    letter-spacing: -1.5px;
+    padding-bottom: 20px;
+    /* to make the default vertical space with (date) a bit more*/
+}
+
+.row6-paragraph {
+    line-height: 1.8;
+    padding-top: 5px;
+    /* to make the default vertical space with (date) a bit more*/
+}
+
+/* ********************************************************/
+/* row6-img-box   in   row6-block*/
+/* ******************************************************/
+.row6-img-box {
+    /* border: 1px solid blue; */
+    width: 60%;
+    height: 427px;
+}
+
+.row6-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ********************************************************/
+/* Row7   in   main-container */
+/* ******************************************************/
+.row7 {
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: 35px;
+}
+
+/* ********************************************************/
+/* row7-block   in   Row7  */
+/* ******************************************************/
+.row7-block {
+    display: flex;
+    gap: 20px;
+    /* to set and align his 4 elements (row7-box) next to each other */
+}
+
+/* ********************************************************/
+/* row7-box   in   row7-block   */
+/* ******************************************************/
+.row7-box {
+    /* border: 1px solid black; */
+    width: 25%;
+}
+
+/* ********************************************************/
+/* row7-img-box   in   row7-box     */
+/* ******************************************************/
+.row7-img-box {
+    /* border: 1px solid red; */
+    height: 170px;
+}
+
+.row7-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ********************************************************/
+/* row8   in   main-container    */
+/* ******************************************************/
+.row8 {
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: 35px;
+}
+
+/* ********************************************************/
+/* row8-block-A   in   row8   */
+/* ******************************************************/
+.row8-block-A {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    /* to make a vertical space with (row8-block-B) */
+}
+
+/* ********************************************************/
+/* row8-img-box-a   in   row8-block-A */
+/* ******************************************************/
+.row8-img-box-a {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 411px;
+    position: relative;
+}
+
+.row8-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row8-img-caption-format {
+    color: white;
+    width: 60%;
+    font-size: 0.8em;
+    border-right: 2px solid red;
+    position: absolute;
+    bottom: 6%;
+    right: 20px;
+    z-index: 1;
+    /* Ensure the caption is above the dark overlay */
+}
+
+.row8-img-box-a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    bottom: 0;
+    left: 0;
+}
+
+/* ********************************************************/
+/* row8-block-B   in   row8 */
+/* ******************************************************/
+.row8-block-B {
+    display: flex;
+    /* to set and align his 3 elements (row8-img-box-b) next to each other */
+    gap: 30px;
+}
+
+/* ********************************************************/
+/* row8-img-box-b   in   row8-block-B  */
+/* ******************************************************/
+.row8-img-box-b {
+    border: 1px solid black;
+    width: 33.3333%;
+    height: 267px;
+    position: relative;
+}
+
+.row8-img-box-b::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    bottom: 0;
+    left: 0
+}
+
+/* ********************************************************/
+/* Row9   in main-container */
+/* ******************************************************/
+.row9 {
+    display: flex;
+    /* to align and set his 2 elements (culture-container) and (choice-container) next to each other */
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: 10px;
+    margin-top: 55px;
+    /* to make a vertical space with (Row8) */
+}
+
+/* ********************************************************/
+/* culture-container   in   Row9 */
+/* ******************************************************/
+.culture-container {
+    /* background-color: yellow; */
+    width: 60%;
+}
+
+/* ***************************************************************/
+/* .row9-section  in    culture-container & choice-container  */
+/* *************************************************************/
+.row9-section {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.section-color {
+    color: #001f44;
+}
+
+/* ********************************************************/
+/*culture-block   in   culture-container*/
+/* ******************************************************/
+.culture-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* even though his 5 elements (culture-box)s are in a column by default, but i used flex-box to be able to give a vertical space btw his 5 elements ;) */
+}
+
+/* ********************************************************/
+/* culture-box   in   culture-block*/
+/* ******************************************************/
+.culture-box {
+    /* border: 1px dashed red; */
+    display: flex;
+    /* to align and set his 2 elements (culture-img-box) and (culture-txt) next to each other */
+    gap: 25px;
+}
+
+/* ********************************************************/
+/* culture-img-box   in   culture-box */
+/* ******************************************************/
+.culture-img-box {
+    /* border: 1px solid red; */
+    width: 40%;
+    height: 237px;
+}
+
+.culture-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ********************************************************/
+/* culture-txt   in   culture-box */
+/* ******************************************************/
+.culture-txt {
+    /* border:1px solid black; */
+    width: 51%;
+}
+
+.culture-paragraph {
+    padding-top: 15px;
+    /* to make the default space with (date) a bit more */
+    line-height: 1.8;
+}
+
+/* ********************************************************/
+/* Choice-container   in   Row9*/
+/* ******************************************************/
+.choice-container {
+    /* background-color: pink; */
+    width: 40%;
+    border-right: 1px solid #b4b4b4;
+    padding-right: 20px;
+    /* to move (border-right) 20px rightward */
+}
+
+/* ********************************************************/
+/* choice-block   in   Choice-container  */
+/* ******************************************************/
+.choice-block {
+    display: flex;
+    gap: 20px;
+    /* to align and set his 2 elements (choice-col) */
+}
+
+/* ********************************************************/
+/* choice-col   in   choice-block    */
+/* ******************************************************/
+.choice-col {
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+/* ********************************************************/
+/* choice-box   in   choice-col    */
+/* ******************************************************/
+.choice-box {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+/* ********************************************************/
+/* choice-img-box   in   choice-box     */
+/* ******************************************************/
+.choice-img-box {
+    background-color: papayawhip;
+    width: 100%;
+    height: 132px;
+}
+
+.choice-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ********************************************************/
+/* card  in   choice-box     */
+/* ******************************************************/
+.card {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    margin-top: -20px;
+    /* this (-20px) does not work untill (card) and (choice-img-box) are aligned by flex-box ;) */
+    align-self: center;
+    z-index: 1;
+    padding: 20px 0;
+}
+
+/* ********************************************************/
+/* card-source   in   card    */
+/* ******************************************************/
+.card-source {
+    /* border: 1px solid black; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 25px;
+}
+
+.card-img {
+    /* border: 1px solid black; */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.card-author {
+    /* border: 1px solid black; */
+    font-size: 14px;
+    font-weight: bold;
+    align-self: center;
+    color: black;
+}
+
+.card-author:hover {
+    color: red;
+}
+
+/* ********************************************************/
+/* card-txt   in   card    */
+/* ******************************************************/
+.card-txt {
+    /* border: 1px solid black; */
+    width: 70%;
+    font-size: 11px;
+    line-height: 1.7;
+    padding-right: 25px;
+}
+
+.card-txt-color {
+    color: #001f44;
+}
+
+/* ********************************************************/
+/* Row10   in   main-container    */
+/* ******************************************************/
+.row10 {
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: 30px;
+}
+
+/* ********************************************************/
+/* row10-block   in   row10 */
+/* ******************************************************/
+.row10-block {
+    display: flex;
+    gap: 20px;
+    /* to align and set his 3 elements (row10-box) next to each other  */
+}
+
+/* ********************************************************/
+/* row10-box   in   row10-block */
+/* ******************************************************/
+.row10-box {
+    /* border: 1px solid black; */
+    background-color: white;
+    width: 33.3333%;
+    padding-bottom: 60px;
+}
+
+/* ********************************************************/
+/* row10-img-box   in    row10-box  */
+/* ******************************************************/
+.row10-img-box {
+    /* border: 1px solid red; */
+    height: 230px;
+}
+
+.row10-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ********************************************************/
+/* row10-txt   in    row10-img-box  */
+/* ******************************************************/
+.row10-header {
+    font-size: 1.35em;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+/* ********************************************************/
+/* Row11   in   main-container  */
+/* ******************************************************/
+.row11 {
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+}
+
+/* ********************************************************/
+/* row11-block   in   Row11  */
+/* ******************************************************/
+.row11-block {
+    display: flex;
+    gap: 20px;
+    /* to set and align his 3 elements (row11-box) next to each other */
+}
+
+/* ********************************************************/
+/* row11-box   in   row11-block  */
+/* ******************************************************/
+.row11-box {
+    /* border: 1px solid black; */
+    width: 33.3333%;
+}
+
+/* ********************************************************/
+/* row11-img-box   in   row11-box  */
+/* ******************************************************/
+.row11-img-box {
+    /* border: 1px solid red; */
+    height: 232px;
+}
+
+.row11-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ********************************************************/
+/* row11-title   in   TITLE-LINE  */
+/* ******************************************************/
+.row11-title {
+    color: #001f44;
+    font-size: 1.1em;
+    white-space: nowrap;
+    /* to prevent the text from wrapping and stay in a one single line ;).. if i do not use this property the text (زانست و تەکنەلۆجیا) would wrap */
+}
+
+/* ********************************************************/
+/* row11-txt   in   row11-box  */
+/* ******************************************************/
+.row11-txt {
+    border-bottom: 1px solid #b4b4b4;
+    padding-bottom: 15px;
+}
+
+/* ********************************************************/
+/* Row12   in   main-container  */
+/* ******************************************************/
+.row12 {
+    display: flex;
+    justify-content: space-between;
+    /* to set and align his 2 elements (footer-A-container) and (footer-B-container) next to each other */
+    margin-top: 25px;
+    /* to make a vertical space with (Row11) */
+}
+
+/* ********************************************************/
+/* footer-A-container   in   Row12 */
+/* ******************************************************/
+.footer-A-container {
+    /* background-color: yellow; */
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    /* to  set and align his 2 elements (footer-col) next to each other */
+}
+
+/* ********************************************************/
+/* footer-B-container   in   Row12 */
+/* ******************************************************/
+.footer-B-container {
+    /* background-color: greenyellow; */
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    /* to  set and align his 3 elements (footer-col),(footer-col), (footer-last-col) next to each other */
+}
+
+/* ********************************************************************/
+/* footer-col   in both (footer-A-container and footer-B-container)*/
+/* *******************************************************************/
+.footer-col {
+    /* border: 1px solid rgb(235, 30, 183); */
+    width: fit-content;
+}
+
+.footer-header {
+    color: #001f44;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.footer-header-space {
+    /* border: 1px solid red; */
+    padding-bottom: 20px;
+}
+
+.footer-element {
+    color: #44556b;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-element-space {
+    /* border: 1px solid red; */
+    padding-bottom: 8px;
+}
+
+.footer-header-below {
+    /* background-color: red; */
+    margin-top: 40px;
+}
+
+.hover-footer {
+    transition: 0.3ms;
+}
+
+.hover-footer:hover {
+    color: red
+}
+
+/* ********************************************************/
+/*footer-last-col   in   footer-B-container*/
+/* ******************************************************/
+.footer-last-col {
+    /* border: 1px solid rgb(235, 30, 183); */
+    width: fit-content;
+}
+
+/* ********************************************************/
+/* footer-last-col-txt   in   footer-last-col*/
+/* ******************************************************/
+.footer-last-col-txt {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+/* ********************************************************/
+/* footer-img-box   in   footer-last-col */
+/* ******************************************************/
+.footer-img-box {
+    /* border:1px solid red; */
+    width: 237px;
+    height: auto;
+}
+
+.footer-img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-img1 {
+    padding: 15px 0;
+}
+
+/* ********************************************************/
+/* Row13   in   main-container */
+/* ******************************************************/
+.row13 {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    /* to align and set his 2 elements (row13-block1) and (row13-block2) next to each other */
+    border-top: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+    padding: 25px 0;
+    /* to push (border-top/bottom) a bit upward and downward */
+    margin-bottom: 25px;
+    /* to make a vertical space with (Row14) */
+}
+
+/* ********************************************************/
+/*row13-block1   in    Row13  */
+/* ******************************************************/
+.row13-block1 {
+    /* border: 1px dashed blue; */
+    width: 10%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    /* to align and set his 2 elements (row13-logo-box) (row13-live-txt) */
+}
+
+/* ********************************************************/
+/* row13-logo-box   in   row13-block1 */
+/* ******************************************************/
+.row13-logo-box {
+    /* border: 1px solid blue; */
+    width: 39px;
+    height: 39px;
+}
+
+.row13-logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* ********************************************************/
+/* row13-live-txt   in   row13-block1 */
+/* ******************************************************/
+.live-txt {
+    /* background-color: pink; */
+    color: #001f44;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3ms;
+}
+
+.live-txt:hover {
+    color: red;
+}
+
+/* ********************************************************/
+/* row13-block2   in   Row13 */
+/* *******************************************************/
+.row13-block2 {
+    /* border: 1px dashed blue; */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: white;
+}
+
+.social-list {
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    gap: 5px;
+    /* to align his 7 elements (icons)in arow next to eac other */
+}
+
+.social-icon-box {
+    /* i created this box (social-icon-box) for having the same box size for all icons. First i made this box by giving padding for icons, but the box sizes were not all the same since the shape of icons affect it. ;) */
+    /* border: 1px solid blue; */
+    width: 40px;
+    height: 40px;
+    background-color: #001f44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* to align the icon vertically and horizontally at center of the box.  */
+    transition: 0.4s;
+}
+
+.social-icon-box:hover {
+    background-color: rgb(243, 35, 35);
+}
+
+/* ***************************************************/
+/* Row14   in   main-container */
+/* ***************************************************/
+.row14-list {
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 15px;
+    padding-bottom: 10px;
+    /* to make a vertical space with (row14-copyright) */
+}
+
+.row14-copyright {
+    color: rgb(143, 143, 143);
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+@media screen and (max-width:480px) {
+
+    .line-between {
+        display: none;
+    }
+
+    .NA {
+        display: none;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .navbar1 {
+        /* border: 1px solid red; */
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 5px;
+    }
+
+    .navbar2 {
+        /* border: 1px solid red; */
+        width: fit-content;
+        justify-content: center;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .navbar1-language {
+        margin-bottom: 0;
+        /* it was 5px */
+        /* to make a vertical space btw itself and (line-between) */
+    }
+
+    .navbar2-part-A {
+        /* background-color: greenyellow; */
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #navbar-channel8-logo {
+        padding: 0;
+    }
+
+    .channel8-logo-resize {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* ******************************************************************/
+    /*   main-container   in   BODY */
+    /* *****************************************************************/
+    .main-container {
+        /* border: 2px solid blue; */
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    /* ******************************************************************/
+    /* Row   in   main-container   in   BODY */
+    /* *****************************************************************/
+    .row {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    /* *******************************/
+    /* Row1 */
+    /* **************************/
+    .row1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-news1 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .main-news1-img-box {
+        /* border: 1px solid blue; */
+        height: 330px;
+    }
+
+    .img-space-category {
+        /* apply on all (img-space-category) classes */
+        margin-bottom: 15px;
+    }
+
+    .category {
+        font-size: 0.85em;
+        /* it was 1em  */
+    }
+
+    .main-news1-header {
+        font-size: 1.1em;
+
+    }
+
+    .date {
+        font-size: 0.85em;
+    }
+
+    .paragraph {
+        font-size: 0.9em;
+    }
+
+    /* *******************************************************/
+    /* sub-news1    in    row1 */
+    /* *****************************************************/
+    .sub-news1 {
+        /* background-color: pink; */
+        width: 100%;
+        gap: 30px;
+        /* to make a vertical space btw his 2 elements (sub-news1-block) */
+    }
+
+    .sub-news1-block {
+        flex-direction: column;
+    }
+
+    .sub-news1-box {
+        width: 100%;
+    }
+
+    .sub-news1-img-box {
+        height: 300px;
+    }
+
+    /* **************************************************/
+    /*  Row2   */
+    /* ***********************************************/
+    .row2 {
+        flex-direction: column;
+        gap: 20px;
+        /* to align and set his 4 elements (row2-box) next to each other */
+    }
+
+    .row2-box {
+        width: 100%;
+    }
+
+    .row2-img-box {
+        width: 180px;
+        height: 180px;
+    }
+
+    .row2-news-header {
+        font-size: 0.85em;
+    }
+
+    /* ******************************************/
+    /* Row3  */
+    /* ****************************************/
+
+    .section {
+        font-size: 1.1em;
+    }
+
+    .row3-block {
+        flex-direction: column;
+    }
+
+    .row3-box {
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    /* ********************************************************/
+    /* Row4  */
+    /* ******************************************************/
+    .row4-block {
+        flex-direction: column;
+        gap: 30px;
+        /* it was 10px  */
+    }
+
+    .row4-box {
+        width: 100%;
+    }
+
+    .little-dot-red {
+        font-size: 1em;
+    }
+
+    /* ********************************************************/
+    /* Row5  */
+    /* ******************************************************/
+    .row5-block {
+        flex-direction: column;
+    }
+
+    .row5-box {
+        width: 100%;
+    }
+
+    .row5-img-box {
+        height: 250px;
+    }
+
+    /* ********************************************************/
+    /* Row6  */
+    /* ******************************************************/
+    .economy-section {
+        font-size: 1.1em;
+        padding-bottom: 20px;
+        /* to make a vertical space with (row6-block) */
+    }
+
+    .row6-block {
+        flex-direction: column;
+        /* to set and align his 2 elements (row6-txt-box) and (row6-img-box)next to each other */
+        gap: 25px;
+    }
+
+    .row6-txt-box {
+        /* border: 1px solid black; */
+        width: 100%;
+        align-self: center;
+        order: 2;
+    }
+
+    .row6-header {
+        font-size: 1.1em;
+        padding-bottom: 10px;
+        /* to make the default vertical space with (date) a bit more*/
+    }
+
+    .row6-img-box {
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 250px;
+        order: 1;
+    }
+
+    /* ********************************************************/
+    /* Row7 */
+    /* ******************************************************/
+    .row7-block {
+        flex-direction: column;
+    }
+
+    .row7-box {
+        width: 100%;
+    }
+
+    .row7-img-box {
+        height: 240px;
+    }
+
+    /* ********************************************************/
+    /* row8  */
+    /* ******************************************************/
+    .row8-block-A {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .row8-img-box-a {
+        width: 100%;
+        height: 270px;
+    }
+
+    .row8-img-caption-format {
+        font-size: 0.65em;
+    }
+
+    .row8-block-B {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .row8-img-box-b {
+        width: 100%;
+        height: 270px;
+    }
+
+    /* ********************************************************/
+    /* Row9   */
+    /* ******************************************************/
+    .row9 {
+        flex-direction: column;
+        /* to align and set his 2 elements (culture-container) and (choice-container) next to each other */
+    }
+
+    /* ********************************************************/
+    /* Culture-container   in   Row9   */
+    /* ******************************************************/
+    .culture-container {
+        /* background-color: yellow; */
+        width: 100%;
+        border-bottom: 1px solid #b4b4b4;
+        margin-bottom: 20px;
+    }
+
+    .row9-section {
+        font-size: 1.1em;
+    }
+
+    .culture-box {
+        width: 100%;
+    }
+
+    .culture-img-box {
+        /* border: 1px solid red; */
+        /* width: 40%; */
+        width: 42%;
+        height: 150px;
+    }
+
+    .culture-txt {
+        /* border:1px solid black; */
+        /* width: 51%; */
+        width: 58%;
+    }
+
+    /* ********************************************************/
+    /* Choice-container   in   Row9*/
+    /* ******************************************************/
+    .choice-container {
+        /* background-color: pink; */
+        width: 100%;
+        padding-right: 0;
+        /* to move (border-right) 20px rightward */
+    }
+
+    .choice-block {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .choice-col {
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    .choice-img-box {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* ********************************************************/
+    /* Row10   in   main-container    */
+    /* ******************************************************/
+    .row10-block {
+        flex-direction: column;
+    }
+
+    .row10-box {
+        width: 100%;
+        padding-bottom: 60px;
+    }
+
+    .row10-img-box {
+        height: 250px;
+    }
+
+    .row10-header {
+        font-size: 1em;
+    }
+
+    /* ********************************************************/
+    /* Row11   in   main-container  */
+    /* ******************************************************/
+    .row11-block {
+        flex-direction: column;
+    }
+
+    .row11-box {
+        width: 100%;
+    }
+
+    .row11-img-box {
+        height: 260px;
+    }
+
+    /* ********************************************************/
+    /* Row12   in   main-container  */
+    /* ******************************************************/
+    .row12 {
+        width: 99%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    /* ********************************************************/
+    /* footer-A-container   in   Row12 */
+    /* ******************************************************/
+    .footer-A-container {
+        /* background-color: yellow; */
+        width: 30%;
+        flex-direction: column;
+    }
+
+    .footer-B-container {
+        /* background-color: greenyellow; */
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-last-col {
+        /* border: 1px solid rgb(235, 30, 183); */
+        width: fit-content;
+    }
+
+    .footer-img-box {
+        width: 150px;
+    }
+
+    /* ********************************************************/
+    /* Row13   in   main-container */
+    /* ******************************************************/
+    .row13 {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .row13-block1 {
+        /* border: 2px dashed blue; */
+        width: 100%;
+        /* it was 10%, but i have to increase it for (max-width:480px) to let the log shows, bcoz with 10% the logo would disappear on (max-width480px) screen */
+        justify-content: center;
+    }
+
+    .row13-block2 {
+        /* border: 2px dashed blue; */
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        overflow-x: hidden;
+        /* to prevent horizontal scrollbar , bcz there is sth overlowing in this block but i have no idea what it is ;) */
+    }
+
+    /* ***************************************************/
+    /* Row14   in   main-container */
+    /* ***************************************************/
+    .row14-list {
+        /* background-color: yellow; */
+        justify-content: center;
+    }
+
+    .footer-element {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .row14-copyright {
+        /* background-color: pink; */
+        display: flex;
+        justify-content: center;
+    }
+
+}
